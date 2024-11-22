@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.container {
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+  max-width: 120rem;
+}
+
+/* =============================================================================== */
+/* Start of header stylings */
+
+.header {
+  height: 100px;
+  border-bottom: 0.05rem solid rgba(0, 0, 0, 0.3);
+}
+
+.announce {
+  background-color: #000;
+  color: #fafafa;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.announce-text {
+  margin: 0;
+}
+
+.announce strong a:link,
+.announce strong a:visited {
+  color: #fafafa;
+  font-weight: 600;
+}
+
+.announce strong a:hover,
+.announce strong a:active {
+  color: #fff;
+}
+
+.header-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.logo-link {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+}
+
+.header-nav-link:link {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.header-nav-link:hover {
+  text-decoration: underline;
+}
+
+.header-search {
+  position: relative;
+}
+
+.header-search-input {
+  padding: 0.4rem 1.5rem;
+  width: 25rem;
+  font-size: 1.4rem;
+}
+
+.header-search-input:focus {
+  outline: none;
+}
+
+.header-search-input::placeholder {
+  font-size: 1.4rem;
+}
+
+.header-search-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* End of header stylings */
+/* =============================================================================== */
+/* Start of main content stylings */
+
+/* End of main content stylings */
+/* =============================================================================== */
+/* Start of footer stylings */
+footer {
+  height: 440px;
+  background-color: #000;
+  color: #fafafa;
+  position: relative;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 217px 210px 123px 109px 198px;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 50px;
+}
+
+/* Exclusive section */
+footer .container .exclusive {
+  color: #fafafa;
+}
+
+footer .container .exclusive h2+p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+footer .container .exclusive p:last-child{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-btn-container {
+  position: relative;
+}
+
+.footer-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #fafafa;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+  footer .container .exclusive input {
+  width: 217px;
+  border: 1.5px #fafafa solid;
+  border-radius: 4px;
+  padding: 12px 0 12px 16px;
+  gap: 32px;
+  font-size: 1.4rem;
+  background-color: var(--main-color);
+}
+
+footer .container .exclusive input:focus {
+  background-color: #fafafa;
+}
+
+/* Support section */
+
+footer .container .support h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+footer .container .support div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container .support div p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+/* Account section*/
+
+footer .container .account h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+footer .container .account a {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+/* Quick Link */
+
+footer .container .quick-link h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+footer .container .quick-link a {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+/* downloud app */
+
+footer .container .download-app img {
+  width: 80px;
+  height: 80px;
+}
+
+footer .container .download-app p {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+footer .container .download-app .app-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+footer .container .download-app .stores-icon img {
+  background-color: #fafafa;
+  height: 40px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+
+.social-media a{
+  color: #fafafa;
+  background-color: #000;
+  flex-basis: 24px;
+  font-size: 1.8rem;
+}
+
+.facebook-icon:hover {
+  color: #3b5998;
+}
+
+.twitter-icon:hover {
+  color: #00acee;
+}
+
+.instagram-icon:hover {
+  color: #c32aa3;
+}
+
+.linkedin-icon:hover {
+  color: #0077b5;
+}
+
+.youtube-icon:hover {
+  color: #ff0000;
+}
+
+
+.copyrights p {
+  text-align: center;
+  margin-top: 90px;
+  opacity: 0.6;
+  background-color: #000;
+}
+
+/* End  of footer*/
+
+
+/* End of footer stylings */
