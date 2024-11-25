@@ -119,7 +119,7 @@ body {
 /* =============================================================================== */
 /* Start of footer stylings */
 footer {
-  height: 440px;
+  /* height: 440px; */
   background-color: #000;
   color: #fafafa;
   position: relative;
@@ -159,9 +159,10 @@ footer .container .exclusive p:last-child{
   font-size: 1.8rem;
   color: #fafafa;
   position: absolute;
-  right: 10px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
+  height: 100%;
 }
 
   footer .container .exclusive input {
@@ -176,6 +177,15 @@ footer .container .exclusive p:last-child{
 
 footer .container .exclusive input:focus {
   background-color: #fafafa;
+}
+
+footer .container .exclusive input::placeholder {
+  font-size: 1.4rem;
+}
+
+footer .container .exclusive input:focus + .footer-btn {
+  fill: #fafafa;
+  background-color: #000;
 }
 
 /* Support section */
@@ -288,8 +298,7 @@ footer .container .download-app .stores-icon img {
   color: #ff0000;
 }
 
-
-.copyrights p {
+.copyrights {
   text-align: center;
   margin-top: 90px;
   opacity: 0.6;

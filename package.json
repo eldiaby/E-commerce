@@ -1,0 +1,27 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "an e-commerce project to practic vanilla js pure(html, css, javascript)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parcel:dev": "parcel index.html",
+    "parcel:build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eldiaby/E-commerce.git"
+  },
+  "keywords": [
+    "e-commerce",
+    "vanillaJs"
+  ],
+  "author": "Eldiaby Hosny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eldiaby/E-commerce/issues"
+  },
+  "homepage": "https://github.com/eldiaby/E-commerce#readme",
+  "devDependencies": {
+    "parcel": "^2.13.0"
+  }
+}
