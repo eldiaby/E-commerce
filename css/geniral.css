@@ -103,7 +103,7 @@ body {
 
 .header-search-btn {
   position: absolute;
-  right: 0;
+  right: 0.5rem;
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
@@ -260,7 +260,9 @@ footer .container .download-app .app-links {
 
 footer .container .download-app .stores-icon img {
   background-color: #fafafa;
-  height: 40px;
+  height: 4rem;
+  width: 11rem;
+  /* aspect-ratio: 3/4; */
 }
 
 .social-media {
@@ -303,6 +305,10 @@ footer .container .download-app .stores-icon img {
   margin-top: 90px;
   opacity: 0.6;
   background-color: #000;
+}
+
+.copyrights p {
+  margin: 0;
 }
 
 /* End  of footer*/
