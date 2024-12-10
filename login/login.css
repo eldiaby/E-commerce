@@ -1,81 +1,107 @@
 .section-login {
-    margin: 4.8rem 0;
-    display: flex;
-    align-items: center;
-    position: relative;
+  margin: 4.8rem 0;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.form-signup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    text-align: left;
+.form-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: left;
 }
 
 .form-heading {
-    font-size: 3.6rem;
-    font-weight: 500;
-    letter-spacing: 0.2rem;
-    margin-bottom: -1.2rem;
+  font-size: 3.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: -1.2rem;
 }
 
 .form-description {
-    font-size: 1.6rem;
-    margin-bottom: 5.2rem;
+  font-size: 1.6rem;
+  margin-bottom: 5.2rem;
 }
 
-
-
 .form-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-controller {
+  margin-bottom: 5.2rem;
+  width: 100%;
 }
 
 .form-input {
-    width: 100%;
-    border: none;
-    border-bottom: 0.1rem solid;
-    margin-bottom: 3.2rem;
-    /* padding: 0.8rem 1.2rem; */
-    height: 3.2rem;
-    font-size: 1.6rem;
+  width: 100%;
+  border: none;
+  border-bottom: 0.1rem solid;
+  /* margin-bottom: 3.2rem; */
+  /* padding: 0.8rem 1.2rem; */
+  height: 3.2rem;
+  font-size: 1.6rem;
 }
 
 .form-input:focus {
-    outline: none;
+  outline: none;
 }
 
 .form-input::placeholder {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.error-message {
+  color: #db4444;
+  font-size: 1.2rem;
+  text-align: right;
+  display: block;
+  width: 100%;
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.form-controller.error .form-input {
+  border-color: #db4444;
+}
+
+.form-controller.success .form-input {
+  border-color: #4bb543;
+}
+
+.form-controller.error .error-message {
+  opacity: 1;
 }
 
 .form-controllers {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .form-button {
-    /* width: 100%;  */
-    color: #fff;
-    background-color: #DB4444;
-    height: 5.2rem;
-    cursor: pointer;
-    padding: 1.6rem 4.8rem;
-    font-size: 1.8rem;
-    border: 0;
-    border-radius: 0.4rem;
+  /* width: 100%;  */
+  color: #fff;
+  background-color: #db4444;
+  height: 5.2rem;
+  cursor: pointer;
+  padding: 1.6rem 4.8rem;
+  font-size: 1.8rem;
+  border: 0;
+  border-radius: 0.4rem;
 }
 
 .form-button:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .form-controllers a {
-    font-size: 1.6rem; 
-    color: #DB4444;
+  font-size: 1.6rem;
+  color: #db4444;
 }

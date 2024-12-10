@@ -1,0 +1,36 @@
+/* Start of our story section   */
+.section-our-story {
+  padding: 1.2rem 0;
+  margin: 6.4rem 0;
+}
+
+.section-our-story .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-story-text {
+  padding: 0 1.2rem;
+  width: 40%;
+}
+
+.our-story-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.our-story-description {
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.our-story-img-container {
+  width: 50%;
+}
+
+.our-story-img {
+  max-width: 100%;
+}
+
+/* End of our story section */
