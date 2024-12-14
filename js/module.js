@@ -21,3 +21,10 @@ export const userLogin = function (user) {
   );
   state.activeUser = JSON.parse(JSON.stringify(userSerch));
 };
+
+const init = async function () {
+  await getUsers();
+  console.log(users);
+};
+
+init();

@@ -1,13 +1,15 @@
+import { emailRegex, passwordRegex } from "../config.js";
+
 // Variables
 
 const form = document.querySelector(".form-login");
 const emailInput = document.querySelector("#useremail");
 const passwordInput = document.querySelector("#userpassword");
 
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-const passwordRegex =
-  /^(?=.*[!@#$%^&*(),.?":{}|<>_+\-=\\[\]\/])[a-zA-Z0-9!@#$%^&*(),.?":{}|<>_+\-=\\[\]\/]{6,32}$/;
+// const passwordRegex =
+//   /^(?=.*[!@#$%^&*(),.?":{}|<>_+\-=\\[\]\/])[a-zA-Z0-9!@#$%^&*(),.?":{}|<>_+\-=\\[\]\/]{6,32}$/;
 
 let emailValidity = false;
 let passwordValidity = false;

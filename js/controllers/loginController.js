@@ -8,9 +8,7 @@ const contralLogin = function (user) {
   goToHomePage();
 };
 
-const init = async function () {
-  await module.getUsers();
-  console.log(module.users);
+const init = function () {
   loginView.handleLogin(contralLogin);
 };
 

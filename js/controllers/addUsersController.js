@@ -1,6 +1,6 @@
-import * as models from '../module.js';
-import * as signupView from '../views/signupView.js';
-import * as helpers from '../helpers.js';
+import * as models from "../module.js";
+import * as signupView from "../views/signupView.js";
+import * as helpers from "../helpers.js";
 
 const controllAddUser = function () {
   const user = signupView.getUser();
